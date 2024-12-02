@@ -1,0 +1,353 @@
+*{
+    box-sizing: border-box;
+    padding: 3px;
+    margin: 0;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    background-image:linear-gradient(rgba(50, 50, 50, 0.75),rgba(50, 50, 50, 0.75)),url(/images/NUANG.jpg);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.nav-bar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    padding: 0 20px;
+  }
+
+.logo {
+    width: 100px;
+}
+  
+.logo img{
+    width: 100px;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+}
+
+.menu li{
+    margin: 0 10px;
+}
+  
+.menu li a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    position: relative;
+}
+
+.menu li a::after{
+    content: "";
+    height: 1px;
+    width: 0;
+    background: #961e00;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s ease-in-out;
+    float:inline-start
+}
+
+.menu li a:hover::after{
+    width: 100%;
+}
+
+.open-menu, .close-menu{
+    position: absolute;
+    color: #960500;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+  
+  .open-menu{
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.close-menu{
+    top: 20px;
+    right: 20px;
+}
+
+#check{
+    display: none;
+  }
+
+.content{
+    flex-basis: 50%;
+}
+.more{
+    text-align: center;
+}
+
+.con-pic{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 120px;
+    font-family: 'Roboto';
+}
+
+p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 14px;
+    line-height: 15px;
+}
+.container{
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}   
+.card{
+    width: 250px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: 0.5s;
+}
+
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+h5{
+    color: #fff;
+}
+
+.stylefac{
+    background: repeating-radial-gradient(rgb(29, 36, 36),rgb(10, 10, 10));
+    background-size:cover;
+    padding: 20px;
+    color:lightcyan;
+    font-size: 15px;
+    margin-top: 15%;
+  }
+  .con1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+  }
+  .back{
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(14, 190, 243);
+  }
+  .back:hover{
+    color: rgb(238, 13, 13);
+  }
+  .pic{
+    border-radius: 0%;
+    height: 210px;
+    width: 200px;
+  }
+  
+  table{
+    margin-left: 285px;
+  }
+  td{
+   padding-left: 10px;
+   padding: 5px;
+   
+  }
+
+  .card_card1 img{
+  
+    width: 320px;
+    height: 280px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing:border-box;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition:0.7s;
+    margin-top: 3%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+ }
+.card_card2 img{
+  
+    width: 320px;
+    height: 280px;
+   display: inline-block;
+   border-radius: 10px;
+   padding: 15px 25px;
+   box-sizing:border-box;
+   margin: 10px 15px;
+   background-position: center;
+   background-size: cover;
+   transition:0.7s;
+   margin-top: 3%;
+   display:flex;
+   flex-direction: column;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+.card_card3 img{
+  
+    width: 320px;
+    height: 280px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing:border-box;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition:0.7s;
+    margin-top: 3%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+   
+ }
+ .card_card4 img{
+  
+    width: 320px;
+    height: 280px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing:border-box;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition:0.7s;
+    margin-top: 3%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+   
+     
+ }
+@media screen and (max-width:768px) {
+
+    body{
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 100%;
+    }
+    
+    .menu{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 88%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: rgb(188, 187, 187);
+        transition: all 0.2s ease-in-out;
+    }
+    .menu li{
+        margin-top: 40px;
+    }
+    
+    .menu li a{
+        padding: 10px;
+    }
+    
+    .open-menu, .close-menu{
+        display: block;
+    }
+    
+    #check:checked ~ .menu{
+        right: 0;
+    }
+
+    .container{
+        display: flex;
+        height: 88%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .col-card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .card{
+        width: 400px;
+        height: 400px;
+    }
+}
+
+
+footer{
+    background-color:rgba(14, 11, 11, 0.75);
+    color: white;
+    padding: 20px 20px;
+    text-align: center;
+    width: 100%;
+    margin-top: auto;
+    position: relative;
+
+}
+footer.foo-logo{
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+footer.PINILI_LOGO img{
+    width: 30px;
+    height: auto;
+    transition:transform 0.3 ease;
+
+}
+
+footer.PINILI_LOGO img:hover{
+    transform: scale(1.1);
+}
+footer ul{
+    text-align: center;
+}
